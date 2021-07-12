@@ -107,9 +107,7 @@ hr{
           width: 253px;
           height: 320px;
           box-shadow:5px 5px 40px whitesmoke;
-          /* display: flex;
-          justify-content: center;
-          align-items: center; */
+         
           display: grid;
           align-items: center;
           grid-template-columns: repeat(3, 1fr);
@@ -149,6 +147,69 @@ hr{
        border-radius: 15px ;
        font-size: 16px;
     }
-       
+
+
+    /* -------------------
+            Media Quaries
+    -------------------------  */
+
+       /* for mobile devices [0px to 688px] */
+       @media only  screen and (max-width: 688px)
+        {
+            .container{
+                width: 100%;
+               height: 100%;
+                
+            }
+            .section-title{
+                text-align: center;
+                color: green;
+            }
+           .players,.blogs, .course{
+               /* background-color: tomato; */
+               grid-template-columns: repeat(1, 1fr);             
+           }
+           .player,.blog{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+           }
+           .course{
+               margin: auto;
+               
+
+           }
+           .course-banner{
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               margin-bottom: 40px;
+           }   
+           .course-height{
+            height: 1000px;
+           }
+           
+       }
+       /* for ipad devices 689 to 991px */
+       @media only screen and (min-width: 688px) and (max-width:991px)
+        {
+            .container{
+                width: 100%;
+            }
+           .players,.course{
+              /* background-color: tomato; */
+              grid-template-columns: repeat(2, 1fr);
+              
+           }
+           .course{
+            /* margin: auto; */
+        }
+           .course-height{
+            height: 1000px;
+           }
+           .course-banner:nth-child(3){
+               margin-top: 60px;
+           }
+       }
 
     
