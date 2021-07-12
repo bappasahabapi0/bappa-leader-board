@@ -104,20 +104,51 @@ hr{
       -----------------*/
       .course{
           margin-left: 30px;
+          width: 253px;
+          height: 320px;
+          box-shadow:5px 5px 40px whitesmoke;
+          /* display: flex;
+          justify-content: center;
+          align-items: center; */
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(3, 1fr);
+          grid-column-gap: 60px;
       }
       .course .course-banner img{
           
         width: 224px;
         height: 104px;
       }
+    
     .course-title{
        
     }  
+    .fa-star{
+        font-size: 12px;
+    }
     .fa-star.filled{
         color:  #FFC014;
         
     }
-    .fa-star.empty{
+    .fa-star.empty , .rate{
         color: #AEAEAE;
         
     }
+    .course-info{
+      display: flex;
+       justify-content:space-between;
+       align-items: center;
+    }
+   
+    .time{
+        background: #FFE4E8;
+        color: #ED6B4F;
+      
+       margin-left: 15px;
+       border-radius: 15px ;
+       font-size: 16px;
+    }
+       
+
+    
